@@ -86,13 +86,12 @@ app.put("/users/:id", (req, res) => {
       } else if (!user) {
         return res.status(404).json({ message: "Book not found" });
       } else {
-        user.save((err, user) => {
+        user.save((err, savedUser) => {
           if (err) {
             return res.status(500).json({ message: err });
           } else {
             return res.status(200).json({
               message: `User with ${req.params.id} was updated`,
-              user: user,
             });
           }
         });
