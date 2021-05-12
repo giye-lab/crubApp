@@ -15,7 +15,7 @@ const User = require("./db/schema");
 //Implement environmental variabes in .env file
 require("dotenv").config();
 //Port from .env
-const { PORT } = process.env;
+const { PORT } = 4123;
 
 //Connect to database
 connectDb();
