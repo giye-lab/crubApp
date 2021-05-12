@@ -2,7 +2,7 @@
   "name": "crudapp",
   "version": "1.0.0",
   "description": "Learning Nodejs in the Zuri program",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,8 @@
     "express-validator": "^6.11.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.8"
+  },
+  "devDependencies": {
+    "nodeman": "^1.1.2"
   }
 }
