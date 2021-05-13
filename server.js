@@ -3,7 +3,7 @@
  * 2. Connects to a database via the db file
  * 3. Create a payload
  * 4. Create a Get route
- * 5. Update route
+5. Update route
  * 6. Delete route
  *
  */
@@ -113,5 +113,5 @@ app.delete("/users/:id", (req, res) => {
   });
 });
 
-const port = PORT;
+const port = process.env || PORT;
 app.listen(port, console.log(`CRUD app running on the port ${port}`));
