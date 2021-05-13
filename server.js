@@ -15,7 +15,7 @@ const User = require("./db/schema");
 //Implement environmental variabes in .env file
 require("dotenv").config();
 //Port from .env
-const { PORT } = process.env;
+const { PORT } = process.env.PORT;
 
 //Connect to database
 connectDb();
@@ -113,5 +113,5 @@ app.delete("/users/:id", (req, res) => {
   });
 });
 
-const port = process.env || PORT;
+const port = process.env.PORT || PORT;
 app.listen(port, console.log(`CRUD app running on the port ${port}`));
