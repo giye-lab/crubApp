@@ -8,12 +8,11 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const { CONNECTIONSTRING } =
-  "mongodb+srv://giye001:giye001@cluster001.ewoji.mongodb.net/zuriDb?retryWrites=true&w=majority";
+const connectionString = `mongodb+srv://giye001:giye001@cluster001.ewoji.mongodb.net/zuriDb?retryWrites=true&w=majority`;
 
 const connectDb = async () => {
   try {
-    await mongoose.connect(CONNECTIONSTRING, {
+    await mongoose.connect(connectionString, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,

@@ -2,6 +2,9 @@
 Learning Nodejs in the Zuri program
 The crudApp implements the CRUD operation which are Create, Read, Update and Delete.
 
+Hosted link --
+## https://zuri-crud-app-3.herokuapp.com/
+
 ### The app contains four routes
 
 ## The Get Route
