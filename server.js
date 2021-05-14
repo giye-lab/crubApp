@@ -43,7 +43,7 @@ app.get("/users", (req, res) => {
     } else {
       return res.status(200).json({
         message: " GET method to get all the created data was successfull",
-        users: users,
+        data: users,
       });
     }
   });
@@ -77,7 +77,6 @@ app.put("/users/:id", (req, res) => {
     req.params.id,
     {
       name: req.body.name,
-      email: req.body.email,
       country: req.body.country,
     },
     (err, user) => {
